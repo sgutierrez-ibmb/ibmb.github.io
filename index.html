@@ -34,10 +34,11 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/DNA_icon.svg" alt="Logo IBMB" class="w-8 h-8" onerror="this.onerror=null;this.src='https://placehold.co/32x32/0D47A1/FFFFFF?text=Logo';">
-                <span class="text-lg font-bold text-brand-primary">Inst. Biología Molecular</span>
+                <span class="text-lg font-bold text-brand-primary">IBMB</span>
             </div>
             <nav class="space-x-8 hidden md:block">
                 <a href="#nosotros" class="hover:text-emerald-600 font-medium">Nosotros</a>
+                <a href="#noticias" class="hover:text-emerald-600 font-medium">Noticias</a> <!-- Enlace a Noticias movido aquí -->
                 <a href="#unidades" class="hover:text-emerald-600 font-medium">Unidades</a>
                 <a href="#proyectos" class="hover:text-emerald-600 font-medium">Proyectos</a>
                 <a href="#publicaciones" class="hover:text-emerald-600 font-medium">Publicaciones</a>
@@ -51,11 +52,9 @@
 
     <!-- Hero Section -->
     <section class="h-screen bg-gradient-to-br from-blue-900 to-blue-700 text-white flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Explorando las fronteras de la vida</h1>
-        <p class="text-lg max-w-xl" data-aos="fade-up">Investigación avanzada en biología molecular desde Bolivia para el mundo.</p>
-        <a href="#nosotros" class="mt-8 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-full transition" data-aos="zoom-in">
-            Conócenos
-        </a>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Instituto de Biología Molecular y Biotecnología  UMSA</h1>
+        <p class="text-lg max-w-xl" data-aos="fade-up">Avanzando el campo de la Biología Molecular para Bolivia, con compromiso y dedicación.</p>
+        <!-- Botón "Conócenos" removido -->
     </section>
 
     <!-- Nosotros -->
@@ -66,27 +65,96 @@
         </div>
     </section>
 
+    <!-- Noticias -->
+    <section id="noticias" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Noticias Recientes</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                    <div class="flex-shrink-0 mr-6 mb-4 md:mb-0">
+                        <p class="text-center text-brand-primary text-2xl font-bold leading-none">25</p>
+                        <p class="text-center text-gray-600 text-sm">JUN</p>
+                        <p class="text-center text-gray-600 text-sm">2025</p>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-brand-dark-text mb-1">El IBMB Presenta Nuevos Avances en Biotecnología Ambiental</h3>
+                        <p class="text-gray-700 text-sm">Nuestro equipo de Biotecnología Ambiental ha publicado resultados prometedores en la bioremediación de suelos.</p>
+                        <a href="#noticias" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                    <div class="flex-shrink-0 mr-6 mb-4 md:mb-0">
+                        <p class="text-center text-brand-primary text-2xl font-bold leading-none">10</p>
+                        <p class="text-center text-gray-600 text-sm">JUN</p>
+                        <p class="text-center text-gray-600 text-sm">2025</p>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-brand-dark-text mb-1">Taller de Genotoxicología atrae a Investigadores Internacionales</h3>
+                        <p class="text-gray-700 text-sm">Un éxito rotundo en nuestro taller de Vigilancia Ambiental y Genotoxicología con participantes de 5 países.</p>
+                        <a href="#noticias" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                    <div class="flex-shrink-0 mr-6 mb-4 md:mb-0">
+                        <p class="text-center text-brand-primary text-2xl font-bold leading-none">01</p>
+                        <p class="text-center text-gray-600 text-sm">JUN</p>
+                        <p class="text-center text-gray-600 text-sm">2025</p>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-brand-dark-text mb-1">Nueva Publicación sobre Microbiología Ambiental en Revista de Alto Impacto</h3>
+                        <p class="text-gray-700 text-sm">Nuestro estudio sobre la diversidad microbiana en el altiplano boliviano ya está disponible.</p>
+                        <a href="#noticias" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Unidades de Investigación -->
-    <section id="unidades" class="py-24 bg-gray-50">
+    <section id="unidades" class="py-24 bg-white"> <!-- Cambiado a bg-white para alternar con Noticias -->
         <div class="max-w-7xl mx-auto px-4" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestras Unidades de Investigación</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Unidad 1: Biología Molecular de Virus y Bacterias -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/e0f2f7/0d47a1?text=Gen%C3%B3mica" alt="Icono Genómica" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
-                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Genómica y Bioinformática</h3>
-                    <p class="text-gray-600 text-sm">Estudio de genomas completos y desarrollo de herramientas computacionales para el análisis de datos biológicos.</p>
+                    <img src="https://placehold.co/150x150/0D47A1/FFFFFF?text=Virus" alt="Icono Biología Molecular de Virus y Bacterias" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biología Molecular de Virus y Bacterias</h3>
+                    <p class="text-gray-600 text-sm">Investigación sobre la genética y el comportamiento molecular de patógenos virales y bacterianos.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
+                <!-- Unidad 2: Microbiología Ambiental -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/e0f2f7/0d47a1?text=Celular" alt="Icono Biología Celular" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
-                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biología Celular y Cáncer</h3>
-                    <p class="text-gray-600 text-sm">Investigación sobre los mecanismos celulares y moleculares del cáncer, buscando nuevas terapias.</p>
+                    <img src="https://placehold.co/150x150/10B981/FFFFFF?text=Ambiente" alt="Icono Microbiología Ambiental" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Microbiología Ambiental</h3>
+                    <p class="text-gray-600 text-sm">Estudio de microorganismos en diversos ecosistemas y su papel en los ciclos biogeoquímicos.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
+                <!-- Unidad 3: Biotecnología Vegetal -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/e0f2f7/0d47a1?text=Vegetal" alt="Icono Biotecnología Vegetal" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://placehold.co/150x150/0D47A1/FFFFFF?text=Vegetal" alt="Icono Biotecnología Vegetal" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biotecnología Vegetal</h3>
-                    <p class="text-gray-600 text-sm">Mejora de cultivos y desarrollo de productos biológicos a partir de plantas para la agricultura.</p>
+                    <p class="text-gray-600 text-sm">Desarrollo de técnicas para la mejora de cultivos y la producción de compuestos de interés en plantas.</p>
+                    <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
+                </div>
+                <!-- Unidad 4: Biotecnología Ambiental -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <img src="https://placehold.co/150x150/10B981/FFFFFF?text=BioAmb" alt="Icono Biotecnología Ambiental" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biotecnología Ambiental</h3>
+                    <p class="text-gray-600 text-sm">Aplicación de procesos biológicos para la remediación y monitoreo de la contaminación ambiental.</p>
+                    <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
+                </div>
+                <!-- Unidad 5: Biología Evolutiva -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <img src="https://placehold.co/150x150/0D47A1/FFFFFF?text=Evolución" alt="Icono Biología Evolutiva" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biología Evolutiva</h3>
+                    <p class="text-gray-600 text-sm">Análisis de los mecanismos y patrones de cambio en la vida a lo largo del tiempo.</p>
+                    <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
+                </div>
+                <!-- Unidad 6: Vigilancia Ambiental y Genotoxicología -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+                    <img src="https://placehold.co/150x150/10B981/FFFFFF?text=Vigilancia" alt="Icono Vigilancia Ambiental y Genotoxicología" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Vigilancia Ambiental y Genotoxicología</h3>
+                    <p class="text-gray-600 text-sm">Monitoreo de la calidad ambiental y evaluación de los efectos genotóxicos de contaminantes.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
             </div>
@@ -94,7 +162,7 @@
     </section>
 
     <!-- Proyectos Destacados (Expanded) -->
-    <section id="proyectos" class="py-24 bg-white">
+    <section id="proyectos" class="py-24 bg-gray-50"> <!-- Cambiado a bg-gray-50 para alternar con Unidades -->
         <div class="max-w-7xl mx-auto px-4" data-aos="fade-left">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -102,7 +170,7 @@
                     <img src="https://placehold.co/600x400/0d47a1/ffffff?text=Chagas" alt="Proyecto Chagas" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0d47a1/ffffff?text=Error';">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Genómica de Trypanosoma cruzi</h3>
-                        <p class="text-sm text-gray-600 mb-3">Unidad de Genómica y Bioinformática</p>
+                        <p class="text-sm text-gray-600 mb-3">Unidad de Biología Molecular de Virus y Bacterias</p>
                         <p class="text-gray-700 text-sm">Estudio de la diversidad genética del parásito del Chagas y su impacto en la salud pública.</p>
                         <a href="#proyectos" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver detalles &rarr;</a>
                     </div>
@@ -120,7 +188,7 @@
                     <img src="https://placehold.co/600x400/94A3B8/1E293B?text=Antibioticos" alt="Proyecto Resistencia" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/94A3B8/1E293B?text=Error';">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Análisis de Resistencia Antimicrobiana</h3>
-                        <p class="text-sm text-gray-600 mb-3">Unidad de Bioinformática</p>
+                        <p class="text-sm text-gray-600 mb-3">Unidad de Microbiología Ambiental</p>
                         <p class="text-gray-700 text-sm">Identificación y caracterización de genes de resistencia en bacterias patógenas de interés clínico.</p>
                         <a href="#proyectos" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver detalles &rarr;</a>
                     </div>
@@ -130,41 +198,67 @@
     </section>
 
     <!-- Publicaciones -->
-    <section id="publicaciones" class="py-24 bg-gray-50">
+    <section id="publicaciones" class="py-24 bg-white"> <!-- Cambiado a bg-white para alternar con Proyectos -->
         <div class="max-w-7xl mx-auto px-4" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestras Publicaciones</h2>
             <div class="space-y-8">
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
                     <div class="flex-grow">
                         <h3 class="text-xl font-semibold text-brand-primary mb-2">Estructura Genómica de Trypanosoma cruzi: Implicaciones para la Vacuna</h3>
                         <p class="text-gray-700 text-sm mb-1">
                             Autores: A. Quispe, B. Mamani, C. López. DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/journal.abc.2025.01</a>
                         </p>
-                        <p class="text-gray-500 text-xs">Revista de Biología Molecular, Vol. 15, No. 2, 2025.</p>
+                        <p class="text-gray-500 text-xs">Revista de Biología Molecular, Vol. 15, No. 2, 2025. <br> <span class="font-semibold">Unidad: Biología Molecular de Virus y Bacterias</span></p>
                     </div>
                     <a href="#" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-md text-sm transition">
                         Descargar PDF
                     </a>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
                     <div class="flex-grow">
                         <h3 class="text-xl font-semibold text-brand-primary mb-2">Impacto de la Sequía en la Expresión Génica de Chenopodium quinoa</h3>
                         <p class="text-gray-700 text-sm mb-1">
                             Autores: D. García, E. Flores. DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/plantsci.def.2024.12</a>
                         </p>
-                        <p class="text-gray-500 text-xs">Journal of Plant Sciences, Vol. 10, No. 4, 2024.</p>
+                        <p class="text-gray-500 text-xs">Journal of Plant Sciences, Vol. 10, No. 4, 2024. <br> <span class="font-semibold">Unidad: Biotecnología Vegetal</span></p>
                     </div>
                     <a href="#" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-md text-sm transition">
                         Descargar PDF
                     </a>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
                     <div class="flex-grow">
                         <h3 class="text-xl font-semibold text-brand-primary mb-2">Nuevas Aproximaciones Bioinformáticas para la Detección de Patógenos Virales</h3>
                         <p class="text-gray-700 text-sm mb-1">
                             Autores: F. Rojas, G. Pérez, H. Vaca. DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/compbio.xyz.2023.05</a>
                         </p>
-                        <p class="text-gray-500 text-xs">Computational Biology Reviews, Vol. 8, No. 1, 2023.</p>
+                        <p class="text-gray-500 text-xs">Computational Biology Reviews, Vol. 8, No. 1, 2023. <br> <span class="font-semibold">Unidad: Microbiología Ambiental</span></p>
+                    </div>
+                    <a href="#" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-md text-sm transition">
+                        Descargar PDF
+                    </a>
+                </div>
+                <!-- Publicación adicional para Biotecnología Ambiental -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-brand-primary mb-2">Bioremediación de Suelos Contaminados con Hidrocarburos</h3>
+                        <p class="text-gray-700 text-sm mb-1">
+                            Autores: I. Quispe, J. Mamani. DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/envsci.ghi.2024.03</a>
+                        </p>
+                        <p class="text-gray-500 text-xs">Environmental Science & Technology, Vol. 12, No. 1, 2024. <br> <span class="font-semibold">Unidad: Biotecnología Ambiental</span></p>
+                    </div>
+                    <a href="#" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-md text-sm transition">
+                        Descargar PDF
+                    </a>
+                </div>
+                <!-- Publicación adicional para Biología Evolutiva -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-brand-primary mb-2">Filogenia de Anfibios Andinos mediante Marcadores Moleculares</h3>
+                        <p class="text-gray-700 text-sm mb-1">
+                            Autores: K. López, L. García. DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/evolbio.jkl.2023.11</a>
+                        </p>
+                        <p class="text-gray-500 text-xs">Evolutionary Biology Journal, Vol. 9, No. 3, 2023. <br> <span class="font-semibold">Unidad: Biología Evolutiva</span></p>
                     </div>
                     <a href="#" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-md text-sm transition">
                         Descargar PDF
@@ -175,32 +269,35 @@
     </section>
 
     <!-- Personas -->
-    <section id="personas" class="py-24 bg-white">
+    <section id="personas" class="py-24 bg-gray-50"> <!-- Cambiado a bg-gray-50 para alternar con Publicaciones -->
         <div class="max-w-7xl mx-auto px-4" data-aos="fade-right">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestro Equipo</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <a href="#personas" class="block bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Investigadores</h3>
                     <p class="text-gray-600">Conoce a nuestros científicos líderes que impulsan la investigación.</p>
                 </a>
-                <a href="#personas" class="block bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Estudiantes</h3>
                     <p class="text-gray-600">La próxima generación de biólogos moleculares y bioinformáticos.</p>
                 </a>
-                <a href="#personas" class="block bg-gray-50 rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Alumni</h3>
                     <p class="text-gray-600">Nuestros egresados que continúan marcando la diferencia en el campo.</p>
                 </a>
+                 <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
+                    <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Administrativos</h3>
+                    <p class="text-gray-600">Apoyo técnico del instituto.</p>
             </div>
         </div>
     </section>
 
     <!-- Eventos -->
-    <section id="eventos" class="py-24 bg-gray-50">
+    <section id="eventos" class="py-24 bg-white"> <!-- Cambiado a bg-white para alternar con Personas -->
         <div class="max-w-7xl mx-auto px-4" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Próximos Eventos</h2>
             <div class="space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-lg transition">
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-lg transition"> <!-- Cambiado a bg-gray-50 -->
                     <div class="flex-shrink-0 mr-6 mb-4 md:mb-0">
                         <p class="text-center text-brand-primary text-2xl font-bold leading-none">30</p>
                         <p class="text-center text-gray-600 text-sm">JUN</p>
@@ -213,7 +310,7 @@
                     </div>
                     <a href="#eventos" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 text-emerald-600 hover:underline font-medium">Ver detalles &rarr;</a>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-lg transition">
+                <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-lg transition"> <!-- Cambiado a bg-gray-50 -->
                     <div class="flex-shrink-0 mr-6 mb-4 md:mb-0">
                         <p class="text-center text-brand-primary text-2xl font-bold leading-none">15</p>
                         <p class="text-center text-gray-600 text-sm">JUL</p>
@@ -230,63 +327,20 @@
         </div>
     </section>
 
-    <!-- Contacto (Expanded) -->
-    <section id="contacto" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4" data-aos="fade-up">
+    <!-- Contacto (Simplified) -->
+    <section id="contacto" class="py-24 bg-gray-50"> <!-- Cambiado a bg-gray-50 para alternar con Eventos -->
+        <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contáctanos</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">Estamos aquí para responder tus preguntas y explorar posibles colaboraciones. Elige el formulario que mejor se adapte a tus necesidades o encuéntranos en nuestra ubicación.</p>
-                    
-                    <h3 class="text-2xl font-bold text-brand-dark-text mb-6">Propuesta de Colaboración</h3>
-                    <form class="space-y-4 bg-gray-50 p-6 rounded-lg shadow-md">
-                        <div>
-                            <label for="collab-name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
-                            <input type="text" id="collab-name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="Tu nombre">
-                        </div>
-                        <div>
-                            <label for="collab-email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                            <input type="email" id="collab-email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="tu.correo@ejemplo.com">
-                        </div>
-                        <div>
-                            <label for="collab-subject" class="block text-sm font-medium text-gray-700">Asunto</label>
-                            <input type="text" id="collab-subject" name="subject" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="Asunto de la propuesta">
-                        </div>
-                        <div>
-                            <label for="collab-message" class="block text-sm font-medium text-gray-700">Mensaje</label>
-                            <textarea id="collab-message" name="message" rows="5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="Describe tu propuesta de colaboración..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-brand-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-md transition">
-                            Enviar Propuesta
-                        </button>
-                    </form>
-                </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center"> <!-- Cambiado a bg-white -->
+                <p class="text-gray-700 mb-6 leading-relaxed">Puedes contactarnos directamente a través de los siguientes medios:</p>
 
-                <div>
-                    <h3 class="text-2xl font-bold text-brand-dark-text mb-6">Contacto General</h3>
-                    <form class="space-y-4 bg-gray-50 p-6 rounded-lg shadow-md">
-                        <div>
-                            <label for="contact-name" class="block text-sm font-medium text-gray-700">Nombre</label>
-                            <input type="text" id="contact-name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="Tu nombre">
-                        </div>
-                        <div>
-                            <label for="contact-email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                            <input type="email" id="contact-email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="tu.correo@ejemplo.com">
-                        </div>
-                        <div>
-                            <label for="contact-message" class="block text-sm font-medium text-gray-700">Mensaje</label>
-                            <textarea id="contact-message" name="message" rows="5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-primary focus:border-brand-primary" placeholder="Tu mensaje..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-brand-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-md transition">
-                            Enviar Mensaje
-                        </button>
-                    </form>
-
-                    <div class="mt-12 text-center lg:text-left">
-                        <h3 class="text-2xl font-bold text-brand-dark-text mb-4">Ubicación</h3>
-                        <p class="text-gray-700 mb-4">Avenida de la Ciencia 123, Zona Universitaria, La Paz, Bolivia</p>
-                        <!-- Embedded Map Placeholder -->
-                        <div class="bg-gray-200 rounded-lg overflow-hidden shadow-md" style="height: 300px;">
+                <div class="space-y-6">
+                    <!-- Ubicación -->
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark-text mb-2">Ubicación</h3>
+                        <p class="text-gray-700">Avenida de la Ciencia 123, Zona Universitaria, La Paz, Bolivia</p>
+                        <!-- Embedded Map -->
+                        <div class="bg-gray-200 rounded-lg overflow-hidden shadow-md mt-4" style="height: 300px;">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.969113693259!2d-68.12574048518933!3d-16.50020788863673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf3b2d6a5913%3A0x6b77b7d0c7d4e3e!2sUniversidad%20Mayor%20de%20San%20Andr%C3%A9s%20(UMSA)!5e0!3m2!1sen!2sbo!4v1678901234567!5m2!1sen!2sbo"
                                 width="100%"
@@ -297,6 +351,22 @@
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
+                    </div>
+
+                    <!-- Correo Electrónico -->
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark-text mb-2">Correo Electrónico</h3>
+                        <p class="text-gray-700">
+                            <a href="mailto:ibmb@fcpn.edu.bo" class="text-brand-primary hover:underline">ibmb@fcpn.edu.bo</a>
+                        </p>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark-text mb-2">Teléfono</h3>
+                        <p class="text-gray-700">
+                            <a href="tel:+59122612815" class="text-brand-primary hover:underline">+591-22612815</a>
+                        </p>
                     </div>
                 </div>
             </div>
