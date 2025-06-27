@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IBMB - Instituto de Biología Molecular y Biotecnología</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    .language-switch {
+      float: right;
+    }
+    main {
+      margin-top: 2rem;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Instituto de Biología Molecular y Biotecnología</h1>
+    <div class="language-switch">
+      <button onclick="switchLang('es')">🇪🇸 ES</button>
+      <button onclick="switchLang('en')">🇬🇧 EN</button>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Investigación</a>
+      <a href="#">Personal</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="content-es">
+      <h2>Bienvenidos</h2>
+      <p>El IBMB es un centro de investigación dedicado al estudio de la biología molecular, la genómica y la biotecnología. Nuestra misión es generar conocimiento científico de alto nivel con impacto local y global.</p>
+    </section>
+
+    <section id="content-en" class="hidden">
+      <h2>Welcome</h2>
+      <p>The IBMB is a research center focused on molecular biology, genomics, and biotechnology. Our mission is to generate high-level scientific knowledge with local and global impact.</p>
+    </section>
+  </main>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('content-es').classList.toggle('hidden', lang !== 'es');
+      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+    }
+  </script>
+</body>
+</html>
