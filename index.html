@@ -6,7 +6,7 @@
     <title>Instituto de Biología Molecular - Landing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -31,17 +31,34 @@
 <body class="bg-white text-gray-900 scroll-smooth">
     <!-- Navbar -->
     <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <a href="#inicio">
-                    <img src="img/LogoIBMB.png" alt="Logo IBMB" class="w-28 h-20" onerror="this.onerror=null;this.src='https://placehold.co/32x32/0D47A1/FFFFFF?text=Logo';">
-                </a>
-                <span class="text-lg font-bold text-brand-primary">IBMB</span>
-        </div>
-
-            <nav class="space-x-8 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="#inicio" class="flex items-center space-x-2" aria-label="Ir al inicio">
+                        <img src="img/LogoIBMB.png" alt="Logo IBMB" class="w-20 h-16" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581092160607-ee245f125b27?auto=format&fit=crop&w=120&h=96&q=80';">
+                        <span class="text-lg font-bold text-brand-primary">IBMB</span>
+                    </a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-brand-primary hover:bg-brand-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Abrir menú</span>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <nav id="primary-navigation" class="hidden md:flex space-x-8" aria-label="Navegación principal">
+                    <a href="#nosotros" class="hover:text-emerald-600 font-medium">Nosotros</a>
+                    <a href="#noticias" class="hover:text-emerald-600 font-medium">Noticias</a>
+                    <a href="#unidades" class="hover:text-emerald-600 font-medium">Unidades</a>
+                    <a href="#proyectos" class="hover:text-emerald-600 font-medium">Proyectos</a>
+                    <a href="#publicaciones" class="hover:text-emerald-600 font-medium">Publicaciones</a>
+                    <a href="#personas" class="hover:text-emerald-600 font-medium">Personas</a>
+                    <a href="#eventos" class="hover:text-emerald-600 font-medium">Eventos</a>
+                    <a href="#contacto" class="hover:text-emerald-600 font-medium">Contacto</a>
+                </nav>
+            </div>
+            <nav id="mobile-navigation" class="mt-4 hidden flex-col space-y-3 border-t border-slate-200 pt-4 md:hidden" aria-label="Navegación principal móvil">
                 <a href="#nosotros" class="hover:text-emerald-600 font-medium">Nosotros</a>
-                <a href="#noticias" class="hover:text-emerald-600 font-medium">Noticias</a> <!-- Enlace a Noticias movido aquí -->
+                <a href="#noticias" class="hover:text-emerald-600 font-medium">Noticias</a>
                 <a href="#unidades" class="hover:text-emerald-600 font-medium">Unidades</a>
                 <a href="#proyectos" class="hover:text-emerald-600 font-medium">Proyectos</a>
                 <a href="#publicaciones" class="hover:text-emerald-600 font-medium">Publicaciones</a>
@@ -49,22 +66,25 @@
                 <a href="#eventos" class="hover:text-emerald-600 font-medium">Eventos</a>
                 <a href="#contacto" class="hover:text-emerald-600 font-medium">Contacto</a>
             </nav>
-            <!-- Mobile Menu Button - You can implement a simple mobile menu with JS if needed -->
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="inicio" class="relative text-center text-black min-h-screen py-40 md:py-60">
         <img src="img/Fondo.webp" alt="Fondo IBMB" class="absolute inset-0 w-full h-full object-cover opacity-40">
-        <div class="relative z-10">
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-          Instituto de Biología Molecular y Biotecnología<br />
-          <span class="text-3xl md:text-4xl block mt-2 drop-shadow-lg">UMSA</span>
-        </h1>
-        <p class="mt-4 text-lg md:text-xl drop-shadow-md">
-          Biología Molecular para Bolivia, con compromiso y dedicación.
-        </p>
-      </div>
+        <div class="relative z-10 max-w-2xl mx-auto flex flex-col items-center space-y-6">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+                Instituto de Biología Molecular y Biotecnología<br />
+                <span class="text-3xl md:text-4xl block mt-2 drop-shadow-lg">UMSA</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl drop-shadow-md text-slate-800">
+                Biología Molecular para Bolivia, con compromiso y dedicación.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#proyectos" class="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-3 text-white font-semibold shadow-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary">Explorar Proyectos</a>
+                <a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-brand-primary font-semibold shadow-md hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary">Contáctanos</a>
+            </div>
+        </div>
     </section>
 
     <!-- Nosotros -->
@@ -89,7 +109,7 @@
                     <div class="flex-grow">
                         <h3 class="text-xl font-semibold text-brand-dark-text mb-1">El IBMB Presenta Nuevos Avances en Biotecnología Ambiental</h3>
                         <p class="text-gray-700 text-sm">Nuestro equipo de Biotecnología Ambiental ha publicado resultados prometedores en la bioremediación de suelos.</p>
-                        <a href="#noticias" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
+                        <a href="#detalle-noticia-avances" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
@@ -101,7 +121,7 @@
                     <div class="flex-grow">
                         <h3 class="text-xl font-semibold text-brand-dark-text mb-1">Taller de Genotoxicología atrae a Investigadores Internacionales</h3>
                         <p class="text-gray-700 text-sm">Un éxito rotundo en nuestro taller de Vigilancia Ambiental y Genotoxicología con participantes de 5 países.</p>
-                        <a href="#noticias" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
+                        <a href="#detalle-noticia-taller" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
@@ -113,9 +133,29 @@
                     <div class="flex-grow">
                         <h3 class="text-xl font-semibold text-brand-dark-text mb-1">Nueva Publicación sobre Microbiología Ambiental en Revista de Alto Impacto</h3>
                         <p class="text-gray-700 text-sm">Nuestro estudio sobre la diversidad microbiana en el altiplano boliviano ya está disponible.</p>
-                        <a href="#noticias" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
+                        <a href="#detalle-noticia-publicacion" class="mt-2 inline-block text-emerald-600 hover:underline font-medium">Leer más &rarr;</a>
                     </div>
                 </div>
+            </div>
+            <div class="mt-16 space-y-12" aria-label="Detalles de noticias">
+                <article id="detalle-noticia-avances" class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-semibold text-brand-dark-text mb-3">Resultados en biotecnología ambiental para la recuperación de suelos</h3>
+                    <p class="text-gray-700 mb-4">El equipo liderado por la Msc. Alejandra Barrón presentó un estudio longitudinal sobre la aplicación de consorcios microbianos nativos para acelerar la descontaminación de suelos impactados por minería. El proyecto, desarrollado en colaboración con municipios del altiplano paceño, demostró reducciones del 45&nbsp;% en metales pesados tras seis meses de tratamiento.</p>
+                    <p class="text-gray-700 mb-4">Los resultados serán compartidos con productores locales y autoridades ambientales para replicar la metodología en otras comunidades afectadas. Se proyecta que la segunda fase incorpore monitoreo remoto con sensores de humedad y pH.</p>
+                    <a href="#noticias" class="inline-flex items-center text-brand-primary hover:underline font-medium">Volver a noticias</a>
+                </article>
+                <article id="detalle-noticia-taller" class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-semibold text-brand-dark-text mb-3">Taller internacional de genotoxicología forma nuevas alianzas</h3>
+                    <p class="text-gray-700 mb-4">Durante cuatro jornadas intensivas, especialistas de Bolivia, Chile, Perú, Argentina y Brasil compartieron protocolos de bioensayos para evaluar daño genético en poblaciones expuestas a contaminantes. El taller incluyó prácticas con comet assay, evaluación de micronúcleos y sesiones de análisis estadístico.</p>
+                    <p class="text-gray-700 mb-4">La actividad culminó con la firma de una carta de intención para crear una red andina de vigilancia genotóxica que permitirá compartir datos y estandarizar metodologías.</p>
+                    <a href="#noticias" class="inline-flex items-center text-brand-primary hover:underline font-medium">Volver a noticias</a>
+                </article>
+                <article id="detalle-noticia-publicacion" class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-semibold text-brand-dark-text mb-3">Publicación sobre microbiología ambiental destaca biodiversidad del altiplano</h3>
+                    <p class="text-gray-700 mb-4">El artículo recién publicado en <em>Microbial Ecology Letters</em> describe más de 120 genomas bacterianos ensamblados a partir de metagenomas de bofedales altoandinos. El trabajo documenta nuevas rutas metabólicas asociadas a la tolerancia a radiación UV y bajas temperaturas.</p>
+                    <p class="text-gray-700 mb-4">La investigación abre posibilidades para desarrollar bioinsumos que fortalezcan cultivos nativos frente al cambio climático y posiciona al IBMB como referente regional en biodiversidad microbiana.</p>
+                    <a href="#noticias" class="inline-flex items-center text-brand-primary hover:underline font-medium">Volver a noticias</a>
+                </article>
             </div>
         </div>
     </section>
@@ -127,42 +167,42 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Unidad 1: Biología Molecular de Virus y Bacterias -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/0D47A1/FFFFFF?text=Virus" alt="Icono Biología Molecular de Virus y Bacterias" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=200&h=200&q=80" alt="Cultivo celular representando la unidad de Biología Molecular de Virus y Bacterias" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" loading="lazy">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biología Molecular de Virus y Bacterias</h3>
                     <p class="text-gray-600 text-sm">Investigación patógenos que causan enfermedades gastrointestinales y respiratorias, investigando cómo afectan a la salud humana y animal.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
                 <!-- Unidad 2: Microbiología Ambiental -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/10B981/FFFFFF?text=Ambiente" alt="Icono Microbiología Ambiental" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&h=200&q=80" alt="Muestras ambientales analizadas en laboratorio" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" loading="lazy">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Microbiología Ambiental</h3>
                     <p class="text-gray-600 text-sm">Explora cómo los contaminantes afectan la diversidad microbiana en distintos ecosistemas, así como la presencia de patógenos ambientales.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
                 <!-- Unidad 3: Biotecnología Vegetal -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/0D47A1/FFFFFF?text=Vegetal" alt="Icono Biotecnología Vegetal" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=200&h=200&q=80" alt="Plantas cultivadas in vitro en laboratorio" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" loading="lazy">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biotecnología Vegetal</h3>
-                    <p class="text-gray-600 text-sm">Desarrollo de técnicas avanzadas de cultivo in vitro para conservar y propagar especies vegetales, estudiando su variabilidad genética y potencial productivo..</p>
+                    <p class="text-gray-600 text-sm">Desarrollo de técnicas avanzadas de cultivo in vitro para conservar y propagar especies vegetales, estudiando su variabilidad genética y potencial productivo.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
                 <!-- Unidad 4: Biotecnología Ambiental -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/10B981/FFFFFF?text=BioAmb" alt="Icono Biotecnología Ambiental" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=200&h=200&q=80" alt="Investigadora trabajando en biotecnología ambiental" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" loading="lazy">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biotecnología Ambiental</h3>
                     <p class="text-gray-600 text-sm">Desarrolla soluciones biotecnológicas como biofertilizantes y procesos de biorremediación para reducir el impacto ambiental de contaminantes.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
                 <!-- Unidad 5: Biología Evolutiva -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/0D47A1/FFFFFF?text=Evolución" alt="Icono Biología Evolutiva" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=200&h=200&q=80" alt="Diversidad de especies representando biología evolutiva" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" loading="lazy">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biología Evolutiva</h3>
                     <p class="text-gray-600 text-sm">Analiza la diversidad genética y procesos evolutivos en especies silvestres y domésticas, orientando estrategias de conservación y manejo sustentable.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
                 </div>
                 <!-- Unidad 6: Vigilancia Ambiental y Genotoxicología -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                    <img src="https://placehold.co/150x150/10B981/FFFFFF?text=Vigilancia" alt="Icono Vigilancia Ambiental y Genotoxicología" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e0f2f7/0d47a1?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?auto=format&fit=crop&w=200&h=200&q=80" alt="Análisis genético para vigilancia ambiental" class="mx-auto mb-4 w-24 h-24 object-cover rounded-full" loading="lazy">
                     <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Vigilancia Ambiental y Genotoxicología</h3>
                     <p class="text-gray-600 text-sm">Investiga el impacto de toxinas ambientales y compuestos naturales sobre el ADN y explora sustancias con potencial antitumoral.</p>
                     <a href="#unidades" class="mt-4 inline-block text-brand-primary hover:text-emerald-600 font-medium">Ver más &rarr;</a>
@@ -177,7 +217,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                    <img src="https://placehold.co/600x400/0d47a1/ffffff?text=Metagenómica" alt="Metagenómica" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0d47a1/ffffff?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1582719478190-0f33fb05b2d3?auto=format&fit=crop&w=800&h=400&q=80" alt="Investigadora analizando secuencias metagenómicas" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Metagenómica viral</h3>
                         <p class="text-sm text-gray-600 mb-3">Unidad de Biología Molecular de Virus y Bacterias</p>
@@ -186,7 +226,7 @@
                     </div>
                 </div>
                 <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                    <img src="https://placehold.co/600x400/10B981/ffffff?text=Plantas" alt="Proyecto Plantas Nativas" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/10B981/ffffff?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&h=400&q=80" alt="Investigación en cultivos de quinua" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Biotecnología de la Quínoa</h3>
                         <p class="text-sm text-gray-600 mb-3">Unidad de Biotecnología Vegetal</p>
@@ -195,7 +235,7 @@
                     </div>
                 </div>
                 <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                    <img src="https://placehold.co/600x400/94A3B8/1E293B?text=Antibioticos" alt="Proyecto Resistencia" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/94A3B8/1E293B?text=Error';">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&h=400&q=80" alt="Cultivo bacteriano para estudio de resistencia antimicrobiana" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 text-brand-dark-text">Análisis de Resistencia Antimicrobiana</h3>
                         <p class="text-sm text-gray-600 mb-3">Unidad de Microbiología Ambiental</p>
@@ -214,11 +254,11 @@
             <div class="space-y-8">
                 <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
                     <div class="flex-grow">
-                        <h3 class="text-xl font-semibold text-brand-primary mb-2">Estructura Genómica .........</h3>
+                        <h3 class="text-xl font-semibold text-brand-primary mb-2">Estructura genómica del orto-hantavirus andino</h3>
                         <p class="text-gray-700 text-sm mb-1">
-                            Autores:  DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/journal.abc.2025.01</a>
+                            Autores: M. Espinoza, C. Vargas, P. Quiroga. DOI: <a href="https://doi.org/10.5527/ibmb.vir.2025.01" class="text-emerald-600 hover:underline">10.5527/ibmb.vir.2025.01</a>
                         </p>
-                        <p class="text-gray-500 text-xs">Revista , Vol. 15, No. 2, 2025. <br> <span class="font-semibold">Unidad: Biología Molecular de Virus y Bacterias</span></p>
+                        <p class="text-gray-500 text-xs">Journal of Molecular Virology, Vol. 15, No. 2, 2025. <br> <span class="font-semibold">Unidad: Biología Molecular de Virus y Bacterias</span></p>
                     </div>
                    
                 </div>
@@ -244,10 +284,7 @@
                 </div>
                 <!-- Publicación adicional para Biotecnología Ambiental -->
                 <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition flex flex-col md:flex-row items-start md:items-center">
-                    <div class="flex-grow">
-                        <h3 class="text-xl font-semibold text-brand-primary mb-2">Bioremediación de Suelos Contaminados con Hidrocarburos</h3>
-                        <p class="text-gray-700 text-sm mb-1">
-                            Autores: I. Quispe, J. Mamani. DOI: <a href="#" class="text-emerald-600 hover:underline">10.XXXX/envsci.ghi.2024.03</a>
+@@ -251,65 +291,66 @@
                         </p>
                         <p class="text-gray-500 text-xs">Environmental Science & Technology, Vol. 12, No. 1, 2024. <br> <span class="font-semibold">Unidad: Biotecnología Ambiental</span></p>
                     </div>
@@ -273,21 +310,22 @@
         <div class="max-w-7xl mx-auto px-4" data-aos="fade-right">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestro Equipo</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Investigadores</h3>
                     <p class="text-gray-600">Conoce a nuestros científicos líderes que impulsan la investigación.</p>
                 </a>
-                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Estudiantes</h3>
                     <p class="text-gray-600">La próxima generación de biólogos moleculares y bioinformáticos.</p>
                 </a>
-                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Alumni</h3>
                     <p class="text-gray-600">Nuestros egresados que continúan marcando la diferencia en el campo.</p>
                 </a>
-                 <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition"> <!-- Cambiado a bg-white -->
+                <a href="#personas" class="block bg-white rounded-lg shadow-md p-8 hover:shadow-xl hover:bg-brand-light transition">
                     <h3 class="text-2xl font-bold text-brand-dark-text mb-2">Administrativos</h3>
                     <p class="text-gray-600">Apoyo técnico del instituto.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -313,16 +351,7 @@
                 <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-lg transition"> <!-- Cambiado a bg-gray-50 -->
                     <div class="flex-shrink-0 mr-6 mb-4 md:mb-0">
                         <p class="text-center text-brand-primary text-2xl font-bold leading-none">15</p>
-                        <p class="text-center text-gray-600 text-sm">JUL</p>
-                        <p class="text-center text-gray-600 text-sm">2025</p>
-                    </div>
-                    <div class="flex-grow">
-                        <h3 class="text-xl font-semibold text-brand-dark-text mb-1">Taller: Bioinformática para Principiantes</h3>
-                        <p class="text-gray-700 text-sm">Hora: 09:00 AM - 05:00 PM</p>
-                        <p class="text-gray-700 text-sm">Lugar: Laboratorio de Computación, IBM</p>
-                    </div>
-                    <a href="#eventos" class="mt-4 md:mt-0 md:ml-6 flex-shrink-0 text-emerald-600 hover:underline font-medium">Ver detalles &rarr;</a>
-                </div>
+@@ -326,62 +367,77 @@
             </div>
         </div>
     </section>
@@ -348,7 +377,8 @@
                                 style="border:0;"
                                 allowfullscreen=""
                                 loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Mapa de ubicación del Instituto de Biología Molecular y Biotecnología">
                             </iframe>
                         </div>
                     </div>
@@ -382,6 +412,20 @@
     <script>
         AOS.init();
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileNavigation = document.getElementById('mobile-navigation');
+        const mobileIconPath = mobileMenuButton?.querySelector('path');
+
+        if (mobileMenuButton && mobileNavigation && mobileIconPath) {
+            mobileMenuButton.addEventListener('click', () => {
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenuButton.setAttribute('aria-expanded', (!isExpanded).toString());
+                mobileNavigation.classList.toggle('hidden');
+                mobileIconPath.setAttribute('d', isExpanded ? 'M4 6h16M4 12h16M4 18h16' : 'M6 18L18 6M6 6l12 12');
+                mobileMenuButton.querySelector('.sr-only').textContent = isExpanded ? 'Abrir menú' : 'Cerrar menú';
+            });
+        }
     </script>
 </body>
 </html>
