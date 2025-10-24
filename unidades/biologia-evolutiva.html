@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidad de Biología Evolutiva | IBMB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <header class="bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <a href="../index.html#unidades" class="flex items-center gap-3 text-brand-primary font-semibold">
+                <img src="../img/LogoIBMB.png" alt="Logo IBMB" class="w-14 h-10" />
+                <span>IBMB &bull; Unidades de Investigación</span>
+            </a>
+            <nav class="flex items-center gap-4 text-sm">
+                <a href="../index.html" class="text-slate-600 hover:text-brand-primary">Inicio</a>
+                <a href="../index.html#unidades" class="text-slate-600 hover:text-brand-primary">Todas las unidades</a>
+                <a href="../index.html#contacto" class="text-slate-600 hover:text-brand-primary">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16 space-y-16">
+        <section class="bg-white shadow-lg rounded-2xl p-8 border border-slate-100">
+            <div class="flex flex-col gap-6 md:flex-row md:items-center">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=480&q=80" alt="Diversidad de especies" class="w-full md:w-72 h-48 object-cover rounded-xl" loading="lazy" />
+                <div class="space-y-4">
+                    <p class="text-sm uppercase tracking-wide text-emerald-600 font-semibold">Unidad de investigación</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-brand-primary">Biología Evolutiva</h1>
+                    <p class="text-base leading-relaxed text-slate-700">Investigamos los procesos que generan y mantienen la biodiversidad de Bolivia mediante estudios genómicos, de campo y de modelación. Buscamos comprender la adaptación de especies a gradientes altitudinales y el efecto del cambio climático sobre la dinámica poblacional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid gap-8 md:grid-cols-[2fr,1fr]">
+            <div class="bg-white shadow-md border border-slate-100 rounded-2xl p-8 space-y-5">
+                <h2 class="text-2xl font-semibold text-brand-primary">Líneas de investigación</h2>
+                <ul class="list-disc list-inside space-y-2 text-slate-700">
+                    <li>Genómica comparada de especies altoandinas y amazónicas.</li>
+                    <li>Modelación demográfica y conservación genética de fauna amenazada.</li>
+                    <li>Evolución de adaptaciones extremas a radiación UV y hipoxia.</li>
+                </ul>
+            </div>
+            <aside class="bg-white shadow-md border border-slate-100 rounded-2xl p-8 space-y-4">
+                <h2 class="text-xl font-semibold text-brand-primary">Investigador responsable</h2>
+                <p class="text-lg font-semibold text-slate-800">Dr. Sergio Paredes</p>
+                <p class="text-sm text-slate-600">PhD en Biología Evolutiva, Universidad de Cornell</p>
+                <p class="text-slate-700 text-sm">Lidera expediciones científicas y proyectos de ciencia ciudadana para monitorear especies clave como la rana andina gigante y plantas endémicas.</p>
+                <a href="mailto:sparedes@ibmb.umsa.bo" class="inline-flex items-center text-emerald-600 font-medium hover:underline">sparedes@ibmb.umsa.bo</a>
+            </aside>
+        </section>
+
+        <section class="bg-white shadow-md border border-slate-100 rounded-2xl p-8 space-y-6">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-2xl font-semibold text-brand-primary">Proyectos en marcha</h2>
+                <p class="text-slate-600">Colaboraciones internacionales con énfasis en conservación basada en evidencia.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+                <article class="p-5 border border-slate-100 rounded-xl bg-slate-50">
+                    <h3 class="text-lg font-semibold text-slate-800">Genómica de la rana gigante del Titicaca</h3>
+                    <p class="mt-2 text-sm text-slate-600">Secuenciación de poblaciones bolivianas y peruanas para diseñar estrategias de rescate genético.</p>
+                    <p class="mt-3 text-xs uppercase tracking-wide text-slate-500">Financia: Fundación Gordon &amp; Betty Moore</p>
+                </article>
+                <article class="p-5 border border-slate-100 rounded-xl bg-slate-50">
+                    <h3 class="text-lg font-semibold text-slate-800">Atlas genético de bosques secos</h3>
+                    <p class="mt-2 text-sm text-slate-600">Caracterización de flujo génico en especies arbóreas para priorizar corredores biológicos en los valles interandinos.</p>
+                    <p class="mt-3 text-xs uppercase tracking-wide text-slate-500">Financia: Darwin Initiative</p>
+                </article>
+                <article class="p-5 border border-slate-100 rounded-xl bg-slate-50">
+                    <h3 class="text-lg font-semibold text-slate-800">Adaptación a hipoxia en aves altoandinas</h3>
+                    <p class="mt-2 text-sm text-slate-600">Estudio transcriptómico en especies de colibríes para identificar genes asociados a metabolismo aeróbico eficiente.</p>
+                    <p class="mt-3 text-xs uppercase tracking-wide text-slate-500">Financia: National Geographic Society</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-white shadow-md border border-slate-100 rounded-2xl p-8">
+            <h2 class="text-2xl font-semibold text-brand-primary mb-6">Comunidad científica</h2>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div>
+                    <h3 class="text-lg font-semibold text-slate-800 mb-3">Investigadores asociados</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <li><span class="font-medium">Dr. Álvaro Jiménez</span> &mdash; Ecología evolutiva de anfibios altoandinos.</li>
+                        <li><span class="font-medium">MSc. Mónica Rivera</span> &mdash; Genética de poblaciones vegetales.</li>
+                        <li><span class="font-medium">Lic. Esteban Lijerón</span> &mdash; Bioacústica y monitoreo de aves.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-slate-800 mb-3">Estudiantes y colaboradores</h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <li><span class="font-medium">Gabriela Nina (Doctorado)</span> &mdash; Evolución de rasgos reproductivos en bromelias.</li>
+                        <li><span class="font-medium">Mauricio Blanco (Maestría)</span> &mdash; Genética de conservación de vicuñas.</li>
+                        <li><span class="font-medium">Isabel Tapia (Licenciatura)</span> &mdash; Modelos de distribución de polinizadores nativos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-slate-500 flex flex-col md:flex-row md:justify-between gap-2">
+            <p>&copy; 2025 Instituto de Biología Molecular y Biotecnología - UMSA.</p>
+            <a href="../index.html#unidades" class="text-emerald-600 font-medium hover:underline">Volver a las unidades</a>
+        </div>
+    </footer>
+</body>
+</html>
